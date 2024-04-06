@@ -34,6 +34,7 @@ body {
   background: url("./images/background.png");
   background-position: center;
   background-size: cover;
+  height: 100%;
   background-repeat: no-repeat;
 }
 
@@ -115,7 +116,7 @@ body {
   text-align: center;
   width: 600px;
   font-family: "Gilroy-light", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /* button styles */
@@ -303,13 +304,13 @@ body {
   .learnMore {
     width: 120px;
     height: 45px;
-    font-family: "Gilroy-light", sans-serif;
+    font-family: "Gilroy-bold", sans-serif;
   }
   .joinTelegram {
     width: 150px;
     height: 45px;
     padding: 0;
-    font-family: "Gilroy-light", sans-serif;
+    font-family: "Gilroy-bold", sans-serif;
   }
 }
 @media screen and (max-width: 400px) {
@@ -329,6 +330,28 @@ body {
   body {
     background: url("./images/mobile_background.png");
     background-size: contain;
+    background-repeat: no-repeat;
     background-color: rgba(31, 0, 71, 1);
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .heroSection_container .header {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+  }
+  .heroSection_container .financial_content {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+  }
+  .middle_content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
   }
 }

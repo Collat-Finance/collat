@@ -32,6 +32,9 @@ const Footer = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;
             <img src={medium} alt="medium" width={30} height={20} />
           </div>
+          <div className="footerRights2">
+            2024 Collat Finance. All Right Reserved
+          </div>
         </div>
       </div>
     </motion.div>

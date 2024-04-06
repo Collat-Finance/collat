@@ -109,7 +109,7 @@ body {
 }
 
 .middle_content {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 30px;
   margin-top: 48px;
   padding: 0 80px;
@@ -201,8 +201,16 @@ body {
   cursor: pointer;
 }
 .footerRights {
+  font-family: "Gilroy-light", sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.footerRights2 {
+  display: none;
+  font-family: "Gilroy-light", sans-serif;
+  text-align: center;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -283,6 +291,13 @@ body {
   .footer_contents {
     flex-direction: column;
     gap: 20px;
+  }
+  .footerRights {
+    display: none;
+  }
+  .footerRights2 {
+    display: flex;
+    font-size: 12px;
   }
   .joinTelegram {
     padding: 10px 40px;

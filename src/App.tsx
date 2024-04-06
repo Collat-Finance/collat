@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import { Footer, HeroSection, Navbar, OverLay } from "./components";
+import { Footer, HeroSection, Navbar } from "./components";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
       <HeroSection />
-      <OverLay />
       <Footer />
     </div>
   );

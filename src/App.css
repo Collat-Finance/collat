@@ -29,10 +29,12 @@
   border-radius: 5px;
 }
 
-.app {
+body {
   background: rgba(31, 0, 71, 1);
-  height: 120vh;
-  overflow-x: hidden !important;
+  background: url("./images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overlay {
@@ -52,6 +54,7 @@
 .right_image {
   position: absolute;
   width: 250px;
+  overflow-y: hidden;
   right: 10%;
   top: 10%;
   height: 250px;
@@ -61,6 +64,7 @@
   width: 400px;
   height: 300px;
   left: 0%;
+  overflow-y: hidden;
   top: 30%;
 }
 .blurry_image {
@@ -249,16 +253,6 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .left_image {
-    left: -12%;
-    transform: scale(0.4);
-  }
-  .right_image {
-    right: 0%;
-  }
-  .overlay {
-    overflow-x: hidden !important;
-  }
   .middle_content {
     width: 500px;
   }
@@ -331,5 +325,10 @@
   }
   .blurry_image {
     right: -20%;
+  }
+  body {
+    background: url("./images/mobile_background.png");
+    background-size: contain;
+    background-color: rgba(31, 0, 71, 1);
   }
 }

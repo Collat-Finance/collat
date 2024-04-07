@@ -49,19 +49,31 @@ const Footer = () => {
           2024 Collat Finance. All Right Reserved
         </div>
         <div className="footer_images">
-          <a href="https://twitter.com/CollatFinance">
+          <a
+            href="https://twitter.com/CollatFinance"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={twitter} alt="twitter" width={30} height={30} />
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="https://t.me/collatfinance">
+          <a href="https://t.me/collatfinance" target="_blank" rel="noreferrer">
             <img src={telegram} alt="telegram" width={30} height={30} />
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="https://discord.gg/QrtvFgGn7r">
+          <a
+            href="https://discord.gg/QrtvFgGn7r"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={discord} alt="discord" width={30} height={23} />
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="https://collatfinance.medium.com/">
+          <a
+            href="https://collatfinance.medium.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={medium} alt="medium" width={30} height={20} />
           </a>
         </div>

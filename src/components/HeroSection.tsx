@@ -42,7 +42,11 @@ const HeroSection = () => {
             animate={{ y: 0 }}
             transition={{ duration: 2.5 }}
           >
-            <a href="https://docs.collat.finance">
+            <a
+              href="https://docs.collat.finance"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="learnMore">Learn More</button>
             </a>
           </motion.div>
@@ -51,7 +55,11 @@ const HeroSection = () => {
             animate={{ y: 0 }}
             transition={{ duration: 2.5, delay: 0.3 }}
           >
-            <a href="https://t.me/collatfinance">
+            <a
+              href="https://t.me/collatfinance"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="joinTelegram">
                 Join Telegram&nbsp;&nbsp;
                 <img src={telegram} alt="telegram" height={25} width={25} />

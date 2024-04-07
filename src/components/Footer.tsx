@@ -1,19 +1,49 @@
 import React from "react";
 import { discord, footer_logo, medium, telegram, twitter } from "../images";
-import { motion } from "framer-motion";
 
 const Footer = () => {
+  const openAllTabsLinks = () => {
+    const learnMoreFocus = window.open("https://docs.collat.finance", "_blank");
+    const telegramFocus = window.open("https://t.me/collatfinance", "_blank");
+    const twitterFocus = window.open(
+      "https://twitter.com/CollatFinance",
+      "_blank"
+    );
+    const discordFocus = window.open("https://discord.gg/QrtvFgGn7r", "_blank");
+    const mediumFocus = window.open(
+      "https://collatfinance.medium.com",
+      "_blank"
+    );
+
+    if (
+      learnMoreFocus &&
+      telegramFocus &&
+      twitterFocus &&
+      discordFocus &&
+      mediumFocus
+    ) {
+      learnMoreFocus.focus();
+      telegramFocus.focus();
+      twitterFocus.focus();
+      discordFocus.focus();
+      mediumFocus.focus();
+    } else {
+      console.error("Popup blockers prevented some windows from opening.");
+    }
+  };
   return (
     <div className="footer_container">
       <div className="footer_contents">
         <div>
-          <img
-            className="footer_logo"
-            src={footer_logo}
-            width={200}
-            height={50}
-            alt="footerImage"
-          />
+          <a href="#" onClick={openAllTabsLinks}>
+            <img
+              className="footer_logo"
+              src={footer_logo}
+              width={200}
+              height={50}
+              alt="footerImage"
+            />
+          </a>
         </div>
         <div className="footerRights">
           2024 Collat Finance. All Right Reserved

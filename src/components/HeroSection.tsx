@@ -53,7 +53,7 @@ const HeroSection = () => {
           >
             <a href="https://t.me/collatfinance">
               <button className="joinTelegram">
-                <p>Join Telegram</p>&nbsp; &nbsp;
+                Join Telegram&nbsp;&nbsp;
                 <img src={telegram} alt="telegram" height={25} width={25} />
               </button>
             </a>

@@ -34,7 +34,6 @@ body {
   background: url("./images/background.png");
   background-position: center;
   background-size: cover;
-  height: 100%;
   background-repeat: no-repeat;
 }
 
@@ -95,6 +94,20 @@ body {
   text-align: center;
   z-index: 9999 !important;
 }
+
+.leftImage {
+  position: absolute;
+  left: -280px;
+  top: -50px;
+  transform: scale(0.25);
+}
+
+.rightImage {
+  position: absolute;
+  right: -160px;
+  top: 10%;
+  transform: scale(0.3);
+}
 .heroSection_container .header {
   color: white;
   font-size: 72px;
@@ -136,6 +149,7 @@ body {
   font-family: "Gilroy-bold", sans-serif;
   height: 65px;
   padding: 1rem;
+  font-size: 16px;
   margin-right: 30px;
   cursor: pointer;
   text-align: center;
@@ -154,6 +168,7 @@ body {
   align-items: center;
   font-family: "Gilroy-bold", sans-serif;
   height: 65px;
+  font-size: 16px;
   padding: 10px 60px;
   cursor: pointer;
   flex-direction: row;
@@ -269,17 +284,16 @@ body {
     transform: scale(0.4);
     bottom: 10%;
   }
+  .leftImage {
+    left: -350px;
+  }
   .footer_container {
     padding: 1rem;
   }
 }
 @media screen and (max-width: 760px) {
-  .left_image {
-    left: -26%;
-    top: 0%;
-    transform: scale(0.4);
-  }
-  .right_image {
+  .rightImage,
+  .leftImage {
     display: none;
   }
   .blurry_image {
@@ -303,12 +317,8 @@ body {
     padding: 10px 40px;
   }
 }
+
 @media screen and (max-width: 540px) {
-  .left_image {
-    left: -34%;
-    top: 0%;
-    transform: scale(0.3);
-  }
   .middle_content {
     line-height: 25px;
     padding: 3rem;
@@ -319,20 +329,27 @@ body {
   .learnMore {
     width: 120px;
     height: 45px;
-    font-family: "Gilroy-bold", sans-serif;
+    font-size: 12.24px;
+    font-weight: 700;
+    line-height: 15.16px;
+    font-family: "Gilroy-medium", sans-serif;
   }
   .joinTelegram {
     width: 150px;
     height: 45px;
     padding: 0;
-    font-family: "Gilroy-bold", sans-serif;
+    font-size: 12.24px;
+    font-weight: 700;
+    line-height: 15.16px;
+    font-family: "Gilroy-medium", sans-serif;
   }
 }
 @media screen and (max-width: 400px) {
-  .left_image {
-    left: -54%;
-    top: 0%;
-    transform: scale(0.3);
+  body {
+    background: url("./images/mobile_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(31, 0, 71, 1);
   }
   .middle_content {
     line-height: 25px;
@@ -341,12 +358,6 @@ body {
   }
   .blurry_image {
     right: -20%;
-  }
-  body {
-    background: url("./images/mobile_background.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: rgba(31, 0, 71, 1);
   }
 }
 

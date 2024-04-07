@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="hero_container">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0, type: "spring" }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
           >
             <h1 className="header">
@@ -38,21 +38,25 @@ const HeroSection = () => {
         </div>
         <div className="button_container">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0, type: "spring" }}
+            initial={{ y: 50 }}
+            animate={{ y: 0 }}
             transition={{ duration: 2.5 }}
           >
-            <button className="learnMore">Learn More</button>
+            <a href="https://docs.collat.finance">
+              <button className="learnMore">Learn More</button>
+            </a>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0, type: "spring" }}
-            transition={{ duration: 2.5 }}
+            initial={{ y: 80 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 2.5, delay: 0.3 }}
           >
-            <button className="joinTelegram">
-              <p>Join Telegram</p>&nbsp; &nbsp;
-              <img src={telegram} alt="telegram" height={25} width={25} />
-            </button>
+            <a href="https://t.me/collatfinance">
+              <button className="joinTelegram">
+                <p>Join Telegram</p>&nbsp; &nbsp;
+                <img src={telegram} alt="telegram" height={25} width={25} />
+              </button>
+            </a>
           </motion.div>
         </div>
       </div>
